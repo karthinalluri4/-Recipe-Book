@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Recipes - Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://th.bing.com/th/id/R.dd672ca322c4668699988301be9a6de5?rik=%2fiC7SESRYyS4hw&riu=http%3a%2f%2fwww.italianfusionfestival.com%2fwp-content%2fuploads%2f2017%2f06%2fitalian-food.jpg&ehk=MwqWkvxL1foRlBj5ZMiNXMaRZJ8nXcXeUMKhhoQfu%2fs%3d&risl=1&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-position: center;
+            color: #333; /* Adjust text color for readability */
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #search-results {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Search Recipes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-recipe.html">Add Recipe</a></li>
+                <li><a href="view-recipes.html">View Recipes</a></li>
+                <li><a href="search-recipes.html">Search Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search-recipes" class="section">
+        <form id="search-form" onsubmit="searchRecipes(event);">
+            <label for="search-query">Search Recipes:</label>
+            <input type="text" id="search-query" name="search-query" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="search-results"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

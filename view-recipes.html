@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Recipes - Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://th.bing.com/th/id/R.dd672ca322c4668699988301be9a6de5?rik=%2fiC7SESRYyS4hw&riu=http%3a%2f%2fwww.italianfusionfestival.com%2fwp-content%2fuploads%2f2017%2f06%2fitalian-food.jpg&ehk=MwqWkvxL1foRlBj5ZMiNXMaRZJ8nXcXeUMKhhoQfu%2fs%3d&risl=1&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Change text color to white */
+        }
+        header {
+            background: rgba(255, 255, 255, 0.8); /* White background for header */
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            color: #000; /* Black text color */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+        }
+        nav ul li a:hover {
+            color: red; /* Change text color to red on hover */
+        }
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+        .recipe {
+            background: rgba(0, 0, 0, 0.7); /* Dark background for recipe cards */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe h3 {
+            margin: 0 0 10px 0;
+            color: #fff;
+        }
+        .recipe p {
+            margin: 5px 0;
+        }
+        .delete-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .delete-btn:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>View Recipes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-recipe.html">Add Recipe</a></li>
+                <li><a href="view-recipes.html">View Recipes</a></li>
+                <li><a href="search-recipes.html">Search Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="view-recipes" class="section">
+        <h2>Recipes</h2>
+        <div id="recipes-list">
+            <!-- Default recipes -->
+            <div class="recipe">
+                <h3>Famous Biryani</h3>
+                <p><strong>Ingredients:</strong> Basmati rice, Chicken, Biryani spices, Yogurt, Onions, Tomatoes, Garlic, Ginger</p>
+                <p><strong>Preparation Steps:</strong> 1. Marinate chicken with spices and yogurt. 2. Cook onions, garlic, and ginger until golden. 3. Add marinated chicken and cook until done. 4. Layer with partially cooked basmati rice and simmer until fully cooked.</p>
+                <button class="delete-btn" onclick="deleteRecipe(this);">Delete</button>
+            </div>
+            <div class="recipe">
+                <h3>Classic Spaghetti</h3>
+                <p><strong>Ingredients:</strong> Spaghetti, Ground beef, Tomato sauce, Garlic, Onion, Olive oil, Basil, Parmesan cheese</p>
+                <p><strong>Preparation Steps:</strong> 1. Cook spaghetti according to package instructions. 2. Sauté garlic and onion in olive oil. 3. Add ground beef and cook until browned. 4. Stir in tomato sauce and simmer. 5. Serve sauce over spaghetti with basil and Parmesan cheese.</p>
+                <button class="delete-btn" onclick="deleteRecipe(this);">Delete</button>
+            </div>
+            <!-- User added recipes will appear here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
