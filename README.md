@@ -1,12 +1,8 @@
 Recipe Book Project README
-
-=============================
 Project Overview
 =============================
 
 This project is a Recipe Book web application that allows users to add, view, and search for recipes. It includes functionality to add new recipes with details such as recipe name, ingredients, and preparation steps. Users can view all added recipes and search for specific recipes based on keywords.
-
-=============================
 File Structure
 =============================
 
@@ -17,8 +13,6 @@ File Structure
 - style.css: CSS file for styling the application.
 - script.js: JavaScript file handling dynamic functionality (adding, viewing, and searching recipes).
 - images/ : Directory containing images used in the project.
-
-=============================
 Functionality
 =============================
 
@@ -35,8 +29,6 @@ Functionality
    - Navigate to "Search Recipes" page.
    - Enter keywords in the search field and click "Search" to find recipes matching the criteria.
    - Search results are displayed dynamically.
-
-=============================
 Additional Instructions
 =============================
 
@@ -44,14 +36,10 @@ Additional Instructions
 - Images for recipes can be uploaded but are not currently implemented in the project. Future updates may include this feature.
 - For any issues or suggestions, please contact [Your Contact Information].
 - This project is intended for demonstration purposes and learning.
-
-=============================
 Credits
 =============================
 
 - Developed by karthik Nalluri
-
-=============================
 Version History
 =============================
 
